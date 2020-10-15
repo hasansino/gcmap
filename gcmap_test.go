@@ -1,4 +1,4 @@
-package worker
+package gcmap
 
 import (
 	"testing"
