@@ -102,4 +102,3 @@ func BenchmarkLoadAndStore(b *testing.B) {
 		st.Load(i)
 	}
 }
-
