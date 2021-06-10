@@ -87,11 +87,10 @@ func (s *Storage) StoreOrUpdate(k, v interface{}, fn func(old, new interface{}) 
 func (s *Storage) Load(k interface{}) (interface{}, bool) {
 	s.RLock()
 	container, found := s.data[k]
+	s.RUnlock()
 	if !found {
-		s.RUnlock()
 		return nil, false
 	}
-	s.RUnlock()
 	return container.data, true
 }
 
