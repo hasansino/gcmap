@@ -88,6 +88,7 @@ func (s *Storage) Load(k interface{}) (interface{}, bool) {
 	s.RLock()
 	container, found := s.data[k]
 	if !found {
+		s.RUnlock()
 		return nil, false
 	}
 	s.RUnlock()
