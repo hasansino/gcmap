@@ -1,7 +1,8 @@
-[![Build Status](https://travis-ci.org/hasansino/gcmap.svg?branch=main)](https://travis-ci.org/hasansino/gcmap)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hasansino/gcmap)](https://goreportcard.com/report/github.com/hasansino/gcmap)
+[![Build Status](https://travis-ci.com/hasansino/gcmap.svg?branch=main)](https://travis-ci.com/hasansino/gcmap)
 
 # gcmap
+
 Thread safe map with record TTL capability
 
 # Installation
